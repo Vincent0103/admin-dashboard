@@ -45,6 +45,8 @@ label {
 }
 
 .sidebar {
+  /* position: fixed; */
+  /* height: 100vh; */
   display: grid;
   grid-template-columns: 40px 150px;
   grid-template-rows: 60px repeat(5, 20px) 60px repeat(2, 20px) 1fr;
