@@ -28,6 +28,11 @@ label {
   margin-top: 20px;
 }
 
+::selection {
+  color: #240046;
+  background: #C77DFF;
+}
+
 .header svg,
 .main-content svg {
   cursor: pointer;
@@ -54,7 +59,15 @@ label {
 }
 
 .sidebar > p {
+  position: relative;
+  cursor: pointer;
   margin: 0;
+  transition: all .2s;
+}
+
+.sidebar > p:hover {
+  transform: translateY(-10%);
+  font-size: 1.1rem;
 }
 
 #sidebar-header {
@@ -83,6 +96,7 @@ label {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 2fr;
   align-content: space-between;
+  column-gap: 30px;
   background-color: #ffffff;
   grid-column: 2;
   padding: 0 40px;
@@ -111,9 +125,9 @@ label {
 .profile-notifications-section {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-  align-self: start;
+  margin-right: 15px;
   gap: 30px;
 }
 
